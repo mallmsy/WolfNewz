@@ -1,0 +1,11 @@
+<h1><%= @article.title %></h1>
+By <%= @article.author %><br>
+<%= link_to 'Original Article', @article.link %> from <%= link_to @article.source %>
+
+<p> <%= @article.summary %>
+<p> <%= @article.content %></p>
+<br>
+<%= form_tag opinions_path do %>
+<%= hidden_field_tag(:user_id, session[:user_id])   %>
+<input type="submit" value="I Like This">
+<% end %>
