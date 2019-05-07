@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>WolfBizIi</title>
+    <title>WolfBiz</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,17 @@
   </head>
 
   <body>
+    <%= button_to "LOGOUT", log_out_path, method: :delete %><br>
+
+    <% if @errors && @errors.any? %>
+     <ul class="errors">
+       <% @errors.each do |error| %>
+       <li>
+         <%= error %>
+       </li>
+       <% end %>
+     </ul>
+     <% end %>
     <%= yield %>
   </body>
 </html>
