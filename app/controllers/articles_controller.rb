@@ -4,6 +4,10 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
   end
 
+  def show_featured #need to build a helper method
+    @articles = Article.most_likes
+  end
+
   private
 
   def article_params
