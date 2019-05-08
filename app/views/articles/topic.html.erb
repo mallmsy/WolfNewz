@@ -1,0 +1,9 @@
+<h1>@articles.first.topic</h1>
+
+<ul>
+<% @articles.each do |article| %>
+<li><%= link_to article.title, article_path %>
+  <%= article.summary %>
+</li>
+<% end %>
+</ul>

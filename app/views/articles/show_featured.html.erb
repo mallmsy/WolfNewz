@@ -1,0 +1,9 @@
+
+<% @articles.each do |article| %>
+<h1><%= article.title %></h1>
+By <%= article.author %><br>
+<%= link_to 'Original Article', article.link %> from <%= link_to article.source %>
+
+<p> <%= article.summary %>
+<p> <%= article.content %></p>
+<% end %>

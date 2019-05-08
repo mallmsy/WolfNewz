@@ -1,11 +1,12 @@
 class ArticlesController < ApplicationController
 
-  def show_featured #need to build a route
-    @article = Article.find_most_influential
+  def show_featured #show_featured for single article, match_most_likes for top five
+    @articles = Article.match_most_likes
   end
 
   def show
     @article = Article.find(params[:id])
+    flash[:suggest] = {suggest: "How about an article from another perspective?"}
   end
 
   def index_by_topic #link that leads to this should be a form that carries the params for "topic"
