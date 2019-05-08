@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   delete "logout", to: "login#destroy", as: "log_out"
 
-  get 'articles/show_featured', to: "articles#show_featured", as: "featured"
+  get 'show_featured', to: "articles#show_featured", as: "featured"
 
   get 'articles/index_by_topic', to: "articles#index_by_topic", as: "by_topic"
 
