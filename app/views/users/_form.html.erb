@@ -8,6 +8,10 @@
   <li><%= f.label :password %></li>
   <%= f.password_field :password %><br>
 <br>
+<li><%= f.label :slant %></li>
+<%= f.collection_select(:slant, Article.all, :slant, :slant) %><br>
+<br>
+
   <%= f.submit %>
 
   <% end %>

@@ -2,6 +2,7 @@ class UsersController < ApplicationController
 
   def welcome
     @user = User.find_by(params[:id])
+    @articles = Article.all
   end
 
   def new

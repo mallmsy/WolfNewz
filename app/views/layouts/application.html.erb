@@ -12,19 +12,24 @@
   <body>
     <%= button_to "LOGOUT", log_out_path, method: :delete %><br>
     <% if @logged_in %>
+<<<<<<< HEAD
       <%= link_to "My Profile", user_path(@logged_in_user_id) %><br>
       <%= link_to "Featured Articles", featured_path %><br>
       
+=======
+        <%= link_to "My Profile", user_path(@logged_in_user_id), class: "fancy-link" %><br>
+
+        <%= link_to "Featured Articles", featured_path %><br>
+
+        <%# Select Topic: %>
+        <%# form_tag by_topic_path, :method => :get do %>
+
+        <%# collection_select(:article, :topic, Article.all, :topic, :topic) %>
+        <%# <button type="submit"> Find </button> %>
+        <%# end %>
+>>>>>>> mallory
       <% end %>
-    <% if @errors && @errors.any? %>
-     <ul class="errors">
-       <% @errors.each do |error| %>
-       <li>
-         <%= error %>
-       </li>
-       <% end %>
-     </ul>
-     <% end %>
+
     <%= yield %>
   </body>
 </html>
