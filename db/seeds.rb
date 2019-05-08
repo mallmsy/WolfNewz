@@ -6,8 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+User.destroy_all
+Article.destroy_all
 
-User.create!(username: "Ernie", password: "1234", slant: 5)
-User.create!(username: "Mallory", password: "5678", slant: 5)
+User.create!(username: "Ernie", password: "1234", slant: "left")
+User.create!(username: "Mallory", password: "5678", slant: "right")
 
-Article.create!(title: "Hollywood Tackles Blockchain-With not-Disastrous Results", author: "Gregory Barber", source: "Wired", topic: "Tech", content: "This an interesting article about tech.", link: "www.wired.com", img_url: "www.wired.com", slant: "center")
+Article.create!(title: "Hollywood Tackles Blockchain-With not-Disastrous Results", author: "Gregory Barber", source: "Wired", topic: "Tech", content: "This an interesting article about tech.", link: "www.wired.com", img_url: "www.wired.com", slant: "right")
