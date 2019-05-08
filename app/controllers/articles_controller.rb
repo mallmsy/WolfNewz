@@ -4,8 +4,12 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
   end
 
-  def show_featured #need to build a helper method
+  def show_featured #need to build a route
     @articles = Article.most_likes
+  end
+
+  def index_by_topic #link that leads to this should be a form that carries the params for "topic"
+
   end
 
   private
