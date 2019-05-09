@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 
   def welcome
-    @user = User.find_by(params[:id])
+    @articles = Article.all
   end
 
   def new
@@ -14,7 +14,7 @@ class UsersController < ApplicationController
       login_user(@user.id)
       redirect_to @user
     else
-      render :welcome
+      render :new
     end
   end
 
@@ -24,7 +24,7 @@ class UsersController < ApplicationController
 
   private
   def user_params
-    params.require(:user).permit(:username, :password)
+    params.require(:user).permit(:username, :password, :slant)
   end
 
 end

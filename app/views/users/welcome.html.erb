@@ -6,7 +6,10 @@
 
 <h3>Sample Articles:</h3>
 <ul>
+  <% samples = @articles.sample(3) %>
+  <% samples.each do |article| %>
   <li>
-    HERE'S AN ARTICLE
+    <%= link_to article.title, article_path(article) %>
   </li>
+  <% end %>
 </ul>

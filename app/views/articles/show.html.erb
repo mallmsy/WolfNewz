@@ -3,7 +3,9 @@ By <%= @article.author %><br>
 <%= link_to 'Original Article', @article.link %> from <%= link_to @article.source %>
 
 <p> <%= @article.summary %>
-<p> <%= @article.content %></p>
+  <% @article.article_split.each do |paragraph| %>
+<p> <%= paragraph %></p>
+<% end %>
 <br>
 
 <% if @logged_in && !@article.users.ids.include?(session[:user_id]) %>

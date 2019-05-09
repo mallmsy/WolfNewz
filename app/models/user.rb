@@ -4,7 +4,16 @@ class User < ApplicationRecord
 
   validates_presence_of :username
   validates_uniqueness_of :username
-  
+
   has_secure_password
+
+  def slanted_articles
+    Article.all.select { |article|
+      article.slant == self.slant}
+  end
+
+  def user_liked_articles
+    self.articles
+  end
 
 end

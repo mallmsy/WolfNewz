@@ -1,3 +1,11 @@
+<ul>
+  <% if flash[:errors] %>
+  <li>
+    <%= flash[:errors] %>
+  </li>
+  <% end %>
+</ul>
+
 <h1>LOGIN</h1>
 
 <%= form_tag login_index_path do %>
@@ -12,5 +20,7 @@
       <%= password_field_tag :password %><br>
     </li>
   </ul>
-  <%= submit_tag "LOGIN" %>
+  <%= submit_tag "LOGIN" %><br>
 <% end %>
+<br>
+<%= link_to "Having trouble logging in? Register a new account here.", new_user_path %>

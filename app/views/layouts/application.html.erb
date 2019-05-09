@@ -5,26 +5,29 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= button_to "LOGOUT", log_out_path, method: :delete %><br>
+    <header>
     <% if @logged_in %>
-      <%= link_to "My Profile", user_path(@logged_in_user_id) %><br>
-      <%= link_to "Featured Articles", featured_path %><br>
-      
+      <%= button_to "LOGOUT", log_out_path, method: :delete %><br>
+        <%= link_to "My Profile", user_path(@logged_in_user_id), class: "fancy-link" %><br>
+
+        <%= link_to "Featured Articles", featured_path %><br>
+
+        <%# Select Topic: %>
+        <%# form_tag by_topic_path, :method => :get do %>
+
+        <%# collection_select(:article, :topic, Article.all, :topic, :topic) %>
+        <%# <button type="submit"> Find </button> %>
+        <%# end %>
       <% end %>
-    <% if @errors && @errors.any? %>
-     <ul class="errors">
-       <% @errors.each do |error| %>
-       <li>
-         <%= error %>
-       </li>
-       <% end %>
-     </ul>
-     <% end %>
+    </header>
+
     <%= yield %>
   </body>
 </html>

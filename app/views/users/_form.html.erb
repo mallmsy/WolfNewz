@@ -1,13 +1,33 @@
 <ul>
+  <% @user.errors.full_messages.each do |message| %>
+  <li>
+    <%= message %>
+  </li>
+  <% end %>
+</ul>
 
+<ul>
 <%= form_for @user do |f|%>
 
-  <li><%= f.label :username %></li>
-  <%= f.text_field :username %><br>
+  <li>
+    <%= f.label :username %>
+    <%= f.text_field :username %>
+  </li>
+
+  <br>
+
+  <li>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+  </li>
+
+  <br>
+  <li><%= f.label :slant, "Where are you on the political spectrum?" %>
+    <%= f.select :slant, [['Left', 'Left'], ['Center', 'Center'], ['Right', 'Right']] %>
+  </li>
+
 <br>
-  <li><%= f.label :password %></li>
-  <%= f.password_field :password %><br>
-<br>
+
   <%= f.submit %>
 
   <% end %>
