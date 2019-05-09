@@ -1,8 +1,9 @@
 <h1>Welcome to your profile, <%= @user.username %>!</h1>
 
 <h3>Suggested Articles:</h3>
+
+<% suggested_article = @user.slanted_articles.sample %>
 <ul>
-  <% suggested_article = @user.slanted_articles.sample %>
   <li>
     <%= link_to suggested_article.title, article_path(suggested_article.id) %>
   </li>
@@ -20,7 +21,7 @@
 </ul>
 
   <% else %>
-    Looks like you haven't liked any articles yet. Head to featured articles to start reading!<br>
+    <p>Looks like you haven't liked any articles yet. Head to featured articles to start reading!</p><br>
 
     <%= link_to "Featured Articles", featured_path %>
   <% end %>

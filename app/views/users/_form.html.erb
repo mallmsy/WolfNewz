@@ -9,14 +9,23 @@
 <ul>
 <%= form_for @user do |f|%>
 
-  <li><%= f.label :username %></li>
-  <%= f.text_field :username %><br>
-<br>
-  <li><%= f.label :password %></li>
-  <%= f.password_field :password %><br>
-<br>
-<li><%= f.label :slant %></li>
-<%= f.collection_select(:slant, Article.all, :slant, :slant) %><br>
+  <li>
+    <%= f.label :username %>
+    <%= f.text_field :username %>
+  </li>
+
+  <br>
+
+  <li>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+  </li>
+
+  <br>
+  <li><%= f.label :slant, "Where are you on the political spectrum?" %>
+    <%= f.select :slant, [['Left', 'Left'], ['Center', 'Center'], ['Right', 'Right']] %>
+  </li>
+
 <br>
 
   <%= f.submit %>

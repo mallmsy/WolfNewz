@@ -10,8 +10,9 @@
   </head>
 
   <body>
-    <%= button_to "LOGOUT", log_out_path, method: :delete %><br>
+    <header>
     <% if @logged_in %>
+      <%= button_to "LOGOUT", log_out_path, method: :delete %><br>
         <%= link_to "My Profile", user_path(@logged_in_user_id), class: "fancy-link" %><br>
 
         <%= link_to "Featured Articles", featured_path %><br>
@@ -23,6 +24,7 @@
         <%# <button type="submit"> Find </button> %>
         <%# end %>
       <% end %>
+    </header>
 
     <%= yield %>
   </body>
