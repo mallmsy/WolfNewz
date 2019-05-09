@@ -1,6 +1,42 @@
+<!-- # <% if @article.slant == "Left" %>
+#   <a href= <%= article_path(@article.random_right_slant) %> >
+#
+#     <div class="ui red message">
+#       <div class="header">
+#       <h3>Stay informed!</h3>
+#       </div>
+#     <p>How about an article from another perspective?</p>
+#   </div>
+# </a>
+# <% elsif @article.slant == "Right" %>
+#   <a href= <%= article_path(@article.random_left_slant) %> >
+#     <div class="ui blue message">
+#       <div class="header">
+#         Stay informed!
+#       </div>
+#       <p>How about an article from another perspective?</p>
+#     </div>
+#   </a>
+#
+#   <% else %>
+#     <a href= <%= article_path(Article.all.sample.id) %> >
+#       <div class="ui purple message">
+#         <div class="header">
+#           Stay informed!
+#         </div>
+#         <p>How about an article from another perspective?</p>
+#       </div>
+#     </a>
+# <% end %> -->
+
+<!-- end of header notification -->
+
+
 <h1><%= @article.title %></h1>
 By <%= @article.author %><br>
-<%= link_to 'Original Article', @article.link %> from <%= link_to @article.source %>
+<%= link_to 'Original Article', @article.link %> from <%= @article.source %><br>
+
+Political Slant: <%= @article.slant %>
 
 <p> <%= @article.summary %>
   <% @article.article_split.each do |paragraph| %>

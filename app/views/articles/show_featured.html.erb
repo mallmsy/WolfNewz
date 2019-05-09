@@ -1,9 +1,35 @@
 
-<% @articles.each do |article| %>
-<h1><%= article.title %></h1>
-By <%= article.author %><br>
-<%= link_to 'Original Article', article.link %> from <%= link_to article.source %>
+<!-- # <% @articles.each do |article| %>
+# <h1><%= article.title %></h1>
+# By <%= article.author %><br>
+# <%= link_to 'Original Article', article.link %> from <%= link_to article.source %>
+#
+# <p> <%= article.summary %>
+# <p> <%= article.content %></p>
+# <% end %> -->
 
-<p> <%= article.summary %>
-<p> <%= article.content %></p>
-<% end %>
+
+<div class="ui cards">
+  <% @articles.each do |article| %>
+  <div class="card">
+    <div class="content">
+      <img class="right floated mini ui image" src= <%= article.img_url %> >
+      <div class="header">
+        <a href= <%= article_path(article) %> > <%= article.title %> </a>
+      </div>
+      <div class="meta">
+        Slant: <%= article.slant %>
+      </div>
+      <div class="description">
+        <%= article.summary %>
+      </div>
+    </div>
+    <div class="extra content">
+      <!-- <div class="ui two buttons">
+        <div class="ui basic green button">Approve</div>
+        <div class="ui basic red button">Decline</div>
+      </div> -->
+    </div>
+  </div>
+  <% end %>
+</div>

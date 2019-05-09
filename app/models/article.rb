@@ -42,4 +42,19 @@ class Article < ApplicationRecord
     self.content.split("@@")
   end
 
+  def random_left_slant
+    left_array = Article.all.select { |article| article.slant == "Left"  }
+    left_array.sample
+  end
+
+  def random_right_slant
+    right_array = Article.all.select { |article| article.slant == "Right"  }
+    right_array.sample
+  end
+
+  def random_center_slant
+    center_array = Article.all.select { |article| article.slant == "Center"  }
+    center_array.sample
+  end
+
 end
