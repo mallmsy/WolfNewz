@@ -38,4 +38,8 @@ class Article < ApplicationRecord
     self.all.select{|article| article.topic == topic}
   end
 
+  def article_split
+    self.content.split("@@")
+  end
+
 end
