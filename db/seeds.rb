@@ -11,17 +11,16 @@ User.destroy_all
 # Health
 # Education
 
-#/// CENTER
+#/// CENTER added by Ernie 5/9
 # BBC, WSJ, USA TODAY
 
 #/// RIGHT
 # FOX, THE FEDERALIST, DAILY CALLER
 
-
-# Article.create!(title: "", author: "", source: "", summary: "", topic: "", content: "", link: "", img_url: "", slant: "")
-
 #/// LEFT added by Mallory 5/8
 # Sources: NYT, WASHINGTON POST, HUFF PO
+
+# Article.create!(title: "", author: "", source: "", summary: "", topic: "", content: "", link: "", img_url: "", slant: "")
 
 Article.create!(title: "Biodiversity Loss Is Urgent. Spreading the Message Is Hard.", author: "Brad Plumer and Somini Sengupta", source: "The New York Times", summary:
 
@@ -757,8 +756,6 @@ The uninsured rate among U.S. working-age adults was 13.3% in 2018, up from 12.8
 Among 17 states with figures reported in the survey, Texas had the highest uninsured rate among working-age adults, 25%, and Massachusetts the lowest, 4.9%. @@
 
 The CDC survey followed a Congressional Budget Office report issued last month last month that found a similar decline in health coverage after years of gains under the Affordable Care Act. @@", link: "https://www.usatoday.com/story/news/nation/2019/05/09/health-insurance-1-1-million-more-americans-lost-coverage-2018/1140304001/", img_url: "https://www.gannett-cdn.com/presto/2019/04/05/USAT/ccd08820-27da-42e1-8d41-e6678c7b2a35-Nebraska_040519.jpg?width=540&height=&fit=bounds&auto=webp", slant: "Center")
-Article.create!(title: "", author: "", source: "", topic: "Health", content: "", link: "", img_url: "", slant: "Center")
-
 
 ##Education
 
@@ -917,4 +914,4 @@ In her five years overseas, Weber said she\'s noticed more-experienced teachers 
 
 \"Usually you start doing this kind of teaching when you\'re young, and you do it for part of your life,\" Weber said. \"Now I\'m meeting people in their early 40s who are teaching abroad for the first time. It\'s clear that there\'s a greater exodus than there was before.\"@@", link: "https://www.usatoday.com/story/news/education/2019/05/06/teacher-salary-teaching-jobs-pay-international-schools-benefits/3622262002/", img_url: "https://www.gannett-cdn.com/presto/2019/04/30/USAT/b5c308ca-d155-4b3e-b10a-145e0c22c6b5-XXX_CP_Teaching_Abroad_Ecuador_62.JPG?width=540&height=&fit=bounds&auto=webp", slant: "Center")
 
-puts "Seeded."
+puts "🌰 Seeded!🌰"
