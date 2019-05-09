@@ -9,12 +9,8 @@ class ArticlesController < ApplicationController
     flash[:suggest] = {suggest: "How about an article from another perspective?"}
   end
 
-<<<<<<< HEAD
   def index_by_topic #link that leads to this should be a form that carries the params for "topic"
     @articles = Article.find_by_topic(params[:topic])
-=======
-  def index_by_topic
->>>>>>> mallory
   end
 
   private

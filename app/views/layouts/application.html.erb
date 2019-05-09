@@ -12,11 +12,6 @@
   <body>
     <%= button_to "LOGOUT", log_out_path, method: :delete %><br>
     <% if @logged_in %>
-<<<<<<< HEAD
-      <%= link_to "My Profile", user_path(@logged_in_user_id) %><br>
-      <%= link_to "Featured Articles", featured_path %><br>
-      
-=======
         <%= link_to "My Profile", user_path(@logged_in_user_id), class: "fancy-link" %><br>
 
         <%= link_to "Featured Articles", featured_path %><br>
@@ -27,7 +22,6 @@
         <%# collection_select(:article, :topic, Article.all, :topic, :topic) %>
         <%# <button type="submit"> Find </button> %>
         <%# end %>
->>>>>>> mallory
       <% end %>
 
     <%= yield %>
