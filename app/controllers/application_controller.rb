@@ -1,6 +1,10 @@
 class ApplicationController < ActionController::Base
   before_action :setup
 
+
+  # @@topics = []
+  # @@slant = ["Left", "Right", "Center"]
+
   def login_user(user_id)
     session[:user_id] = user_id
   end
