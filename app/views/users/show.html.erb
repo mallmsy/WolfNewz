@@ -16,6 +16,11 @@
     <% @user.articles.each do |article| %>
     <li>
       <%= link_to article.title, article_path(article) %>
+      <%= form_tag opinion_path, method: "delete" do %>
+      <%= hidden_field_tag(:article_id, article.id) %>
+      <%= hidden_field_tag(:user_id, session[:user_id])  %>
+      <input type="submit" value="Unlike This">
+      <% end %>
     </li>
     <% end %>
 </ul>

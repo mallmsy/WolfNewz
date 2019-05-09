@@ -19,13 +19,13 @@
 
         <%= link_to "Featured Articles", featured_path %><br>
 
-        <%# Select Topic: %>
-        <%# form_tag by_topic_path, :method => :get do %>
+        Select Topic:
+        <%= form_tag by_topic_path, method: :get do%>
+        <%= select_tag(:topic, options_for_select(@topics)) %>
+        <input type="submit" value="Find">
+        <% end %>
 
-        <%# collection_select(:article, :topic, Article.all, :topic, :topic) %>
-        <%# <button type="submit"> Find </button> %>
-        <%# end %>
-      <% end %>
+        <% end %>
     </header>
 
     <%= yield %>

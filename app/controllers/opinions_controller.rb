@@ -4,7 +4,14 @@ class OpinionsController < ApplicationController
     @opinion = Opinion.create(opinion_params)
     redirect_to article_path(opinion_params[:article_id])
   end
+
+  def destroy
+    @opinion = Opinion.find_by(user_id: params[:user_id], article_id: params[:article_id])
+    @opinion.destroy
+    redirect_to user_path(session[:user_id])
+  end
 end
+
 
 private
 

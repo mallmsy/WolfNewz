@@ -16,6 +16,11 @@ By <%= @article.author %><br>
   <% end %>
 <% elsif @logged_in %>
   <p>You have already liked this article!</p>
+  <p> <%= form_tag opinion_path, method: "delete" do %>
+  <%= hidden_field_tag(:article_id, @article.id) %>
+  <%= hidden_field_tag(:user_id, session[:user_id])  %>
+  <input type="submit" value="Unlike This">
+  <% end %> </p>
 <% else %>
   <p>Show your approval for this article with a like! <%= link_to 'Log In', new_login_path %> or <%=link_to 'Sign Up', new_user_path %></p>
 <% end %>

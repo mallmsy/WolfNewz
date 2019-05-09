@@ -2,6 +2,10 @@ class Article < ApplicationRecord
   has_many :opinions
   has_many :users, through: :opinions
 
+  def self.order_by_likes
+    Article.all.sort_by{|article| article.opinions.count}.reverse.first(5)
+  end
+
   def self.count_likes
     self.all.map{|article| article.opinions.count}
   end
@@ -16,10 +20,10 @@ class Article < ApplicationRecord
 
   def self.match_most_likes
     article_array = []
-    self.most_likes.each do |article_likes|
+    self.order_by_likes.each do |article_likes|
       article_array << Article.all.find{|article| article.likes == article_likes}
     end
-    return article_array
+    return article_array.uniq
   end
 
   def likes
