@@ -411,101 +411,59 @@ DeVos, who has spent more than two years on the job, has been one of Trump’s l
 
 ##Climate Change
 
-Article.create!(title: "Climate change: Half world\'s biggest airlines don\'t offer carbon offsetting", author: "N/A", source: "BBC News", topic: "Climate Change", content: "Less than half of the world\'s major airlines are giving passengers the opportunity to offset the carbon dioxide produced from their flights, BBC research found. @@
+Article.create!(title: "Climate change: Half world\'s biggest airlines don\'t offer carbon offsetting", author: "N/A", summary:"Less than half of the world\'s major airlines are giving passengers the opportunity to offset the carbon dioxide produced from their flights, BBC research found.", source: "BBC News", topic: "Climate Change", content: "Less than half of the world\'s major airlines are giving passengers the opportunity to offset the carbon dioxide produced from their flights, BBC research found. @@
 
-When airlines do offer such a scheme, generally fewer than 1% of flyers are choosing to spend more.@@
+When airlines do offer such a scheme, generally fewer than 1% of flyers are choosing to spend more. Carbon offsetting enables passengers to balance out their carbon footprint by paying towards environmental projects.@@
 
-Carbon offsetting enables passengers to balance out their carbon footprint by paying towards environmental projects.@@
+Aviation accounts for 2% of global human-induced greenhouse gas emissions. Prices vary but a return flight from London to Malaga, Spain, would cost around £4 to offset.@@
 
-Aviation accounts for 2% of global human-induced greenhouse gas emissions.@@
-
-Prices vary but a return flight from London to Malaga, Spain, would cost around £4 to offset.@@
-
-The BBC contacted the world\'s biggest airlines in terms of numbers of flights and numbers of passengers.@@
-
-Out of the 28 approached, less than half offered a carbon offset scheme and the majority declined to provide data on the number of passengers offsetting their flights during a one year period - often saying their figures were too low to report.@@
+The BBC contacted the world\'s biggest airlines in terms of numbers of flights and numbers of passengers. Out of the 28 approached, less than half offered a carbon offset scheme and the majority declined to provide data on the number of passengers offsetting their flights during a one year period - often saying their figures were too low to report.@@
 
 Michael Gill, a director from the international aviation trade body Iata, said: We strongly recommend all passengers to use high-quality projects to offset their own CO2 emissions as an individual contribution to addressing climate change.@@
 
-Carbon offsetting allows passengers to pay extra to help compensate for the carbon emissions produced from their flight.@@
+Carbon offsetting allows passengers to pay extra to help compensate for the carbon emissions produced from their flight. The money is then invested in environmental projects - like planting trees or installing solar panels - which reduce the carbon dioxide in the air by the same amount.@@
 
-The money is then invested in environmental projects - like planting trees or installing solar panels - which reduce the carbon dioxide in the air by the same amount.@@
+Passengers can pay the additional charge when they buy their ticket from participating airlines, but independent offsetting companies also exist. The price varies between airlines, but a return flight from London and Cape Town, South Africa would cost roughly £20 to offset, according to ClimateCare.@@
 
-Passengers can pay the additional charge when they buy their ticket from participating airlines, but independent offsetting companies also exist.@@
-
-The price varies between airlines, but a return flight from London and Cape Town, South Africa would cost roughly £20 to offset, according to ClimateCare.@@
-
-The CO2 emissions per passenger from that flight is roughly the same as those produced from heating the average home for a year.@@
-
-Some activists have criticised carbon offsetting as an excuse to continue polluting, arguing that it does little to change behaviour. Advocates defend offsetting just as vociferously.@@
+The CO2 emissions per passenger from that flight is roughly the same as those produced from heating the average home for a year. Some activists have criticised carbon offsetting as an excuse to continue polluting, arguing that it does little to change behaviour. Advocates defend offsetting just as vociferously.@@
 
 British Airways does not run a carbon offsetting scheme. Instead, it gives customers the opportunity to contribute towards carbon reduction and community projects@@
 
 Lufthansa offers a carbon offsetting scheme, but uptake from passengers is less than 1%. Following the BBC\'s enquiry, the company said it would now make the offer more visible to customers during the booking process@@
 
-Ryanair does offer a carbon offsetting scheme, but the company refused to disclose the uptake by passengers@@
+Ryanair does offer a carbon offsetting scheme, but the company refused to disclose the uptake by passengers. American Airlines, the world\'s biggest airline, does not offer an offset scheme. The company says it has taken many meaningful steps to reduce fuel consumption and CO2 emissions, including buying new, more fuel-efficient planes@@
 
-American Airlines, the world\'s biggest airline, does not offer an offset scheme. The company says it has taken many meaningful steps to reduce fuel consumption and CO2 emissions, including buying new, more fuel-efficient planes@@
+Emirates does not offer a scheme, but will be participating in an international carbon offset scheme from 2021. Qantas bucked the trend with 10% of passengers opting to offset. More people are flying than ever and over four billion passengers fly every year.@@
 
-Emirates does not offer a scheme, but will be participating in an international carbon offset scheme from 2021@@
-
-Qantas bucked the trend with 10% of passengers opting to offset@@
-
-More people are flying than ever and over four billion passengers fly every year.@@
-
-All international carriers must now report their CO2 emissions on an annual basis and the sector as a whole is aiming to halve its carbon footprint by 2050.@@
-
-From next year, airlines will be required to offset any increase in emissions beyond their 2020 levels by reducing emissions elsewhere.@@
-
-The new international system, known as Corsia and established by the United Nations, is the first time a single industry sector has agreed to a global measure to tackle climate change.@@
+All international carriers must now report their CO2 emissions on an annual basis and the sector as a whole is aiming to halve its carbon footprint by 2050. From next year, airlines will be required to offset any increase in emissions beyond their 2020 levels by reducing emissions elsewhere. The new international system, known as Corsia and established by the United Nations, is the first time a single industry sector has agreed to a global measure to tackle climate change.@@
 
 Prof Neil Harris, head of atmospheric informatics at Cranfield University, UK, says carbon offsetting is a good idea but it\'s not working. He feels airlines and governments need to do more.@@
 
-All opt in schemes tend to have low take-up, he explained.@@
-
-\"Secondly I think there is a  lack of clarity on what the scheme is. You want to know the money is being well spent.\"@@
-
-Prof Kevin Anderson, who researches energy and climate change at the University of Manchester, said the most important thing was changing consumer behaviour.@@
+All opt in schemes tend to have low take-up, he explained. \"Secondly I think there is a  lack of clarity on what the scheme is. You want to know the money is being well spent.\" Prof Kevin Anderson, who researches energy and climate change at the University of Manchester, said the most important thing was changing consumer behaviour.@@
 
 Most people just fly occasionally but there is this small group who are very frequent fliers. And these people cannot be using offsetting to allow them to carry on business as usual, he said.@@
 
 \"If we are serious about climate change, it is not a business-as-usual world, we will have to change how it is we operate. And until we accept that we\'re going to continue to fail on climate change and the emissions will continue to rise.\"@@", link: "https://www.bbc.com/news/science-environment-48133365", img_url: "https://ichef.bbci.co.uk/news/660/cpsprodpb/1643A/production/_106749119_gettyimages-527513402.jpg", slant: "Center")
 
-Article.create!(title: "Climate change: England flood planners \'must prepare for worst\'", author: "Roger Harrabin", source: "BBC News", topic: "Climate Change", content: "Its chairwoman, Emma Howard Boyd, said on current trends, global temperature could rise between 2C and 4C by 2100 and £1bn a year would need to be spent on flood management.@@
+Article.create!(title: "Climate change: England flood planners \'must prepare for worst\'", author: "Roger Harrabin", summary: "Its chairwoman, Emma Howard Boyd, said on current trends, global temperature could rise between 2C and 4C by 2100 and £1bn a year would need to be spent on flood management.",source: "BBC News", topic: "Climate Change", content: "Its chairwoman, Emma Howard Boyd, said on current trends, global temperature could rise between 2C and 4C by 2100 and £1bn a year would need to be spent on flood management.@@
 
 She said some communities may even need to move because of the risk of floods.@@
 
-The government said it would be seeking evidence for its own flood policy in the autumn.@@
+The government said it would be seeking evidence for its own flood policy in the autumn. Ms Howard Boyd, launching the consultation on the agency\'s flood strategy, said government policy should ensure that all publicly-funded infrastructure is resilient to flooding and coastal change by 2050.@@
 
-Ms Howard Boyd, launching the consultation on the agency\'s flood strategy, said government policy should ensure that all publicly-funded infrastructure is resilient to flooding and coastal change by 2050.@@
-
-\"We can\'t win a war against water by building away climate change with infinitely high flood defences,\" she said.@@
-
-She called for more to be done to encourage property owners to rebuild homes after flooding in better locations, and with improvements such as raised electrics, hard flooring and flood doors, rather than just \"recreating what was there before\".@@
+\"We can\'t win a war against water by building away climate change with infinitely high flood defences,\" she said. She called for more to be done to encourage property owners to rebuild homes after flooding in better locations, and with improvements such as raised electrics, hard flooring and flood doors, rather than just \"recreating what was there before\".@@
 
 However, she warned that in some places \"the scale of the threat may be so significant that recovery will not always be the best long term solution\" and communities would need help to \"move out of harm\'s way\".@@
 
-The agency expects more intense bursts of rain and continuing coastal erosion.@@
+The agency expects more intense bursts of rain and continuing coastal erosion. It calculates that, for every person who suffers flooding, about 16 more are affected by loss of services such as power, transport and telecommunications.@@
 
-It calculates that, for every person who suffers flooding, about 16 more are affected by loss of services such as power, transport and telecommunications.@@
+Ms Howard Boyd warned that climate change and population growth in England meant that properties built in the floodplain will double over the next 50 years. The agency points towards research from the Cambridge Institute for Sustainability Leadership which suggests that losses on UK mortgages could also double if global temperatures increase by 2C and triple if warming hits 4C.@@
 
-Ms Howard Boyd warned that climate change and population growth in England meant that properties built in the floodplain will double over the next 50 years.@@
+These would be insurance-related losses related to outcomes of climate change such as more extreme weather. Ms Howard-Boyd said the government\'s six-year flood programme had given flood and coastal protection \"a shot in the arm\", but she warned that more will be needed. Environment Minister Therese Coffey said: \"Flooding and coastal erosion can have terrible consequences for people, businesses and the environment.@@
 
-The agency points towards research from the Cambridge Institute for Sustainability Leadership which suggests that losses on UK mortgages could also double if global temperatures increase by 2C and triple if warming hits 4C.@@
+\"That\'s why we are already providing £2.6bn over six years, delivering more than 1,500 projects to better protect 300,000 homes.\" But she added that \"the threat of climate change will mean an increasing risk and preparing the country is a priority for the government, and the nation as a whole\".@@
 
-These would be insurance-related losses related to outcomes of climate change such as more extreme weather.@@
-
-Ms Howard-Boyd said the government\'s six-year flood programme had given flood and coastal protection \"a shot in the arm\", but she warned that more will be needed.@@
-
-Environment Minister Therese Coffey said: \"Flooding and coastal erosion can have terrible consequences for people, businesses and the environment.@@
-
-\"That\'s why we are already providing £2.6bn over six years, delivering more than 1,500 projects to better protect 300,000 homes.\"@@
-
-But she added that \"the threat of climate change will mean an increasing risk and preparing the country is a priority for the government, and the nation as a whole\".@@
-
-In a statement, Friends of the Earth said: \"Smarter adaptation and resilience building - including natural flood management measures like tree-planting - is undeniably important.@@
-
-\"But the focus must be first and foremost on slashing emissions so that we can avoid the worst consequences of climate chaos in the first place.@@
+In a statement, Friends of the Earth said: \"Smarter adaptation and resilience building - including natural flood management measures like tree-planting - is undeniably important. \"But the focus must be first and foremost on slashing emissions so that we can avoid the worst consequences of climate chaos in the first place.@@
 
 \"With its relentless pursuit of fracking, airport expansion, and road building, and barely tepid support for renewable energy, our government is failing with this regard.\"@@ ", link: "https://www.bbc.com/news/science-environment-48206325", img_url: "https://ichef.bbci.co.uk/news/660/cpsprodpb/13276/production/_106845487_brighton_getty.jpg", slant: "Center")
 
@@ -513,7 +471,7 @@ In a statement, Friends of the Earth said: \"Smarter adaptation and resilience b
 
 ##Gun Control
 
-Article.create!(title: "Students walk out of Colorado school shooting vigil, saying their trauma was being politicized", author: "John Bacon", source: "USA Today", topic: "Gun Control", content: "A vigil honoring Colorado high school shooting victim Kendrick Castillo dissolved into protest late Wednesday with some students walking out and others chanting \"mental health\" when speakers discussed gun control.@@
+Article.create!(title: "Students walk out of Colorado school shooting vigil, saying their trauma was being politicized", author: "John Bacon", summary: "A vigil honoring Colorado high school shooting victim Kendrick Castillo dissolved into protest late Wednesday with some students walking out and others chanting \"mental health\" when speakers discussed gun control.",source: "USA Today", topic: "Gun Control", content: "A vigil honoring Colorado high school shooting victim Kendrick Castillo dissolved into protest late Wednesday with some students walking out and others chanting \"mental health\" when speakers discussed gun control.@@
 
 More than 2,000 attended the vigil at STEM School Highlands Ranch High School, as STEM School Highlands Ranch students burst into a spontaneous demonstration, protesting politics and the media.@@
 
@@ -528,7 +486,7 @@ The event, one of at least three memorials held Wednesday, was organized by the 
 Castillo, 18, was killed and eight students were wounded Tuesday when two teens opened fire in classrooms at the K-12 school specializing in science and math. Castillo, three days away from completing high school, and two classmates charged one of the shooters at his school. The avid hunter and fisherman was killed. @@
 
 Colorado Gov. Jared Polis signed \"red flag\" legislation last month providing judges with the power to temporarily remove firearms from people believed to be at high risk of harming themselves or others. @@", link: "https://www.usatoday.com/story/news/nation/2019/05/09/colorado-school-shooting-vigil-students-walk-out-protest/1150282001/  ", img_url: "https://www.gannett-cdn.com/presto/2019/05/09/USAT/5546dd81-258f-40e7-ba4c-59758e43491f-colorado_vigil.JPG?width=540&height=&fit=bounds&auto=webp", slant: "Center")
-Article.create!(title: "Gun control takes center stage in 2020 Democratic presidential race ", author: "Amanda Becker ", source: "Reuters", topic: "Gun Control", content: " WASHINGTON (Reuters) - U.S. Senator Cory Booker on Monday released a sweeping plan to curb gun violence by creating a national licensing program and repealing a law that gives gun manufacturers legal immunity, becoming the latest Democrat in the 2020 presidential race to make gun control measures a feature of their campaign.@@
+Article.create!(title: "Gun control takes center stage in 2020 Democratic presidential race ", summary: "U.S. Senator Cory Booker on Monday released a sweeping plan to curb gun violence.",author: "Amanda Becker ", source: "Reuters", topic: "Gun Control", content: " WASHINGTON (Reuters) - U.S. Senator Cory Booker on Monday released a sweeping plan to curb gun violence by creating a national licensing program and repealing a law that gives gun manufacturers legal immunity, becoming the latest Democrat in the 2020 presidential race to make gun control measures a feature of their campaign.@@
 
 In the past, Democrats have feared that supporting gun restrictions could cost them the backing of working-class, swing voters - the group widely credited with tipping the 2016 presidential contest to Republican Donald Trump.@@
 
@@ -568,7 +526,7 @@ It was not taken up by the Republican-controlled Senate and Trump has threatened
 ##Immigration
 
 
-Article.create!(title: "\'Only in the Panhandle\': Trump chuckles when audience member suggests shooting migrants", author: "William Cummings", source: "USA Today", topic: "Immigration", content: "President Donald Trump was tickled Wednesday when an audience member at a Florida rally suggested shooting migrants arriving at the U.S.-Mexico border. @@
+Article.create!(title: "\'Only in the Panhandle\': Trump chuckles when audience member suggests shooting migrants", summary: "President Donald Trump was tickled Wednesday when an audience member at a Florida rally suggested shooting migrants arriving at the U.S.-Mexico border.",author: "William Cummings", source: "USA Today", topic: "Immigration", content: "President Donald Trump was tickled Wednesday when an audience member at a Florida rally suggested shooting migrants arriving at the U.S.-Mexico border. @@
 
 Trump was bemoaning the legal protections afforded migrants and espousing the need for a border wall when he asked rhetorically, \"How do you stop these people?\" @@
 
@@ -589,7 +547,7 @@ In November, Trump suggested that the U.S. troops he deployed could fire on migr
 During an interview with Fox News host Sean Hannity in March, Trump said the threat of deadly force is a \"very effective\" way to deter migrants, but said the U.S. \"can\'t do it.\" @@
 
 \"We need to defend our country. You have people pouring in,\" he told Hannity. \"Now, we\'re capturing these people, we\'re getting them. But we don\'t do like other countries. Other countries stand there with machine guns ready to fire. We can\'t do that and I wouldn\'t want to do that.\" @@", link: "https://www.usatoday.com/story/news/politics/onpolitics/2019/05/09/trump-chuckles-shooting-migrants/1150160001/", img_url: "", slant: "Center")
-Article.create!(title: "Mexican president says U.S. tariffs on tomatoes won\'t help migration problem ", author: "Delphine Schrank", source: "Reuters ", topic: "Immigration", content: "MEXICO CITY (Reuters) - Mexican President Andres Manuel Lopez Obrador on Wednesday criticized a U.S. decision to impose a 17.5% tariff on tomatoes imported from Mexico, saying it ran counter to efforts to curb migration into the United States from south of the border. @@
+Article.create!(title: "Mexican president says U.S. tariffs on tomatoes won\'t help migration problem ", summary: "Mexican President Andres Manuel Lopez Obrador on Wednesday criticized a U.S. decision to impose a 17.5% tariff on tomatoes imported from Mexico.",author: "Delphine Schrank", source: "Reuters ", topic: "Immigration", content: "MEXICO CITY (Reuters) - Mexican President Andres Manuel Lopez Obrador on Wednesday criticized a U.S. decision to impose a 17.5% tariff on tomatoes imported from Mexico, saying it ran counter to efforts to curb migration into the United States from south of the border. @@
 
 \"This serves to encourage (migration),\" Lopez Obrador told reporters at a regular news conference, noting the tariff decision was \"the opposite of an intelligent policy seeking to temper the migration issue.\"The veteran leftist has sought to avoid confrontation with U.S. President Donald Trump since taking office in December, and put the tariff decision down to U.S. electoral politics. @@
 
@@ -607,9 +565,7 @@ U.S. growers and lawmakers say that deal has failed. @@", link: "https://www.reu
 
 ##tech
 
-
-
-Article.create!(title: "New York\'s Rideshare Organizers Clash Amid Unprecedented Uber Strike", author: "Bryan Menegus", source: "Gizmodo", topic: "Tech", content: "Long Island City—Just days before Uber\'s expected debut on the stock market at a conservative but still-astronomical $80 to $90 billion valuation, the anger among rideshare drivers boiled over into an international day of action. @@
+Article.create!(title: "New York\'s Rideshare Organizers Clash Amid Unprecedented Uber Strike", summary: "Long Island City—Just days before Uber\'s expected debut on the stock market at a conservative but still-astronomical $80 to $90 billion valuation",author: "Bryan Menegus", source: "Gizmodo", topic: "Tech", content: "Long Island City—Just days before Uber\'s expected debut on the stock market at a conservative but still-astronomical $80 to $90 billion valuation, the anger among rideshare drivers boiled over into an international day of action. @@
 
 In at least 20 cities around the world, Uber drivers with few employment protections and no real way to contact one another came together on Wednesday to demand fairer conditions. That action on this scale could be coordinated at all is, on its own, an astounding achievement. A grand expression of frustration can be cathartic in its own way, but at times the balkanized pockets of organizers appeared to be rowing in opposite directions—nowhere more starkly than in the company\'s largest market: New York City.@@
 
@@ -640,7 +596,7 @@ The divide between the two labor groups is largely idealogical: a hardline appro
 Both groups were adamant that today\'s action was just the beginning, which even Uber itself seems keenly aware of. \"As we aim to reduce Driver incentives to improve our financial performance, we expect Driver dissatisfaction will generally increase,\" the company wrote in its S-1 filing, setting the stage for increasingly widespread outrage. But it\'s also the beginning of some very difficult coalition-building for these various national and international groups to agree on and pursue unified demands—or risk losing their own momentum to conflict and confusion.@@
 
 ", link: "https://gizmodo.com/new-yorks-rideshare-organizers-clash-amid-unprecedented-1834623838", img_url: "https://i.kinja-img.com/gawker-media/image/upload/s--nrtarHs1--/c_scale,f_auto,fl_progressive,q_80,w_800/tfir2kcbohzppaifipgl.jpg", slant: "Center")
-Article.create!(title: "FTC Members Unanimously Press Congress for Tough National Privacy Protections", author: "Dell Cameron", source: "Gizmodo", topic: "Tech", content: "All five members of the Federal Trade Commission appeared Wednesday before the House Communications and Technology Subcommittee. One or two would have probably done the job. When it comes to consumer privacy—the hearing\'s dominant focus—the commissioners\' opinions, however uniquely expressed, rarely diverge when it matters the most. @@
+Article.create!(title: "FTC Members Unanimously Press Congress for Tough National Privacy Protections", author: "Dell Cameron", summary: "All five members of the Federal Trade Commission appeared Wednesday before the House Communications and Technology Subcommittee",source: "Gizmodo", topic: "Tech", content: "All five members of the Federal Trade Commission appeared Wednesday before the House Communications and Technology Subcommittee. One or two would have probably done the job. When it comes to consumer privacy—the hearing\'s dominant focus—the commissioners\' opinions, however uniquely expressed, rarely diverge when it matters the most. @@
 
 On the issue of a tough new privacy law to control how major tech companies handle the voluminous data collected on Americans each year, all five unanimously agree: such a law is desperately needed. In fact, no hearing\'s attendees on either side of the room bothered to play at devil\'s advocate. That exercise would have been entirely fruitless. @@
 
@@ -684,7 +640,7 @@ In regard to a new law, what the FTC doesn\'t want to be stuck with is making de
 
 
 
-Article.create!(title: "American Airlines calls video of dispute with agent \'extremely concerning\'", author: "Anthony Zurita", source: "USA Today", topic: "Travel", content: "American Airlines has responded after one of its employees reportedly called a New Jersey man a \'killer\' during a baggage dispute partially caught on video, according to NorthJersey.com, which is part of the USA TODAY Network. @@
+Article.create!(title: "American Airlines calls video of dispute with agent \'extremely concerning\'", author: "Anthony Zurita", summary: "American Airlines has responded after one of its employees reportedly called a New Jersey man a \'killer\' during a baggage dispute.", source: "USA Today", topic: "Travel", content: "American Airlines has responded after one of its employees reportedly called a New Jersey man a \'killer\' during a baggage dispute partially caught on video, according to NorthJersey.com, which is part of the USA TODAY Network. @@
 
 Theresia Tirado and her husband, Michael, were trying to reclaim a lost bag after their flight was redirected to Memphis International Airport. An American Airlines agent tasked with trying to get their bag back was not being helpful, Theresia told news station WREG Memphis. @@
 
@@ -702,7 +658,7 @@ The airline declined to comment on discipline of the employee; however, Theresia
 
 The Tirados could not be reached for further comment on Friday. @@ ", link: "https://www.usatoday.com/story/travel/flights/2019/05/03/american-airlines-video-baggage-dispute-corrections-officer/1093038001/", img_url: "", slant: "Center")
 
-Article.create!(title: "Britain to consider airline seat levy to cover costs of failures", author: "Alistair Smout", source: "Reuters", topic: "Travel", content: "LONDON (Reuters) - Airlines operating in Britain should pay a seat levy to cover the costs of getting passengers home in case a carrier goes bust, a government commissioned review said on Thursday. @@
+Article.create!(title: "Britain to consider airline seat levy to cover costs of failures", summary: "Airlines operating in Britain should pay a seat levy to cover the costs of getting passengers home in case a carrier goes bust.", author: "Alistair Smout", source: "Reuters", topic: "Travel", content: "LONDON (Reuters) - Airlines operating in Britain should pay a seat levy to cover the costs of getting passengers home in case a carrier goes bust, a government commissioned review said on Thursday. @@
 
 The recommendations seek to even out anomalies in protection for British travelers, highlighted when Monarch collapsed in 2017, but airlines rejected the review\'s proposed \"airline seat levy\" which it said would cost less than 50 pence per passenger. @@
 
@@ -729,7 +685,7 @@ But Airlines UK, which represents Britain\'s carriers, said that any tax would m
 
 ##Health
 
-Article.create!(title: "CDC: 1.1 million more Americans lost health insurance coverage in 2018", author: "Ken Alltucker", source: "USA Today", topic: "Health", content: "The number of Americans without health insurance increased again in 2018, the second consecutive year that figure has risen after several years of declines under Obamacare, a new Centers for Disease Control and Prevention survey shows. @@
+Article.create!(title: "CDC: 1.1 million more Americans lost health insurance coverage in 2018", author: "Ken Alltucker", source: "USA Today", summary: "The number of Americans without health insurance increased again in 2018.",topic: "Health", content: "The number of Americans without health insurance increased again in 2018, the second consecutive year that figure has risen after several years of declines under Obamacare, a new Centers for Disease Control and Prevention survey shows. @@
 
 An estimated 30.4 million Americans did not have health insurance in 2018, up from 29.3 million in 2017, according to the CDC\'s National Health Interview Survey.  That means about 1.1 million more Americans lost insurance coverage last year. @@
 
@@ -759,7 +715,7 @@ The CDC survey followed a Congressional Budget Office report issued last month l
 
 ##Education
 
-Article.create!(title: "How to pay for college without going broke? Let us count the ways", author: "Charisse Jones", source: "USA Today", topic: "Education", content: "When her two sons were younger, Sarah McCord says she was a stay-at-home mom. But as soon as her oldest hit high school, she went back to work with one goal in mind: using her pay to cover the kids\' college tuition. @@
+Article.create!(title: "How to pay for college without going broke? Let us count the ways", author: "Charisse Jones", summary: "When her two sons were younger, Sarah McCord says she was a stay-at-home mom.",source: "USA Today", topic: "Education", content: "When her two sons were younger, Sarah McCord says she was a stay-at-home mom. But as soon as her oldest hit high school, she went back to work with one goal in mind: using her pay to cover the kids\' college tuition. @@
 
 \"The cost of school, I think, is exorbitant, and I can\'t imagine how (a student) would recoup that if a kid were to finance that on their own,\'\' says McCord, whose salary from her job at a pharmaceutical company covers her younger son\'s roughly $17,000 a semester in tuition, room and board. \"Entry level salaries just aren\'t going to make a dent in those payments.\'\'@@
 
@@ -820,7 +776,7 @@ With tuition in the 2018-2019 school year rising 2.5% at a public, four-year, in
 
 \"You\'re probably going to have to save and borrow,\'\' says Kantrowitz, \"but they can be good ways of helping to defray the costs.\”\'@@
  ", link: "https://www.usatoday.com/story/money/2019/05/08/pay-college-families-turn-crowdfunding-cash-back-529/3627275002/", img_url: "https://www.gannett-cdn.com/-mm-/4ee68a73120512c880330b32358d73fcef19ad16/c=166-0-466-225/local/-/media/2019/05/06/USATODAY/usatsports/decipher-college-aid.jpg?width=540&height=405&fit=crop", slant: "Center")
-Article.create!(title: "These teachers\' jobs give fair salary, housing, respect. All they had to do was leave U.S.", author: "Erin Richards", source: "USA Today", topic: "Education", content: "QUITO, Ecuador – Kip Mapstone has lived a double life as a science teacher.@@
+Article.create!(title: "These teachers\' jobs give fair salary, housing, respect. All they had to do was leave U.S.", summary: "Kip Mapstone has lived a double life as a science teacher.", author: "Erin Richards", source: "USA Today", topic: "Education", content: "QUITO, Ecuador – Kip Mapstone has lived a double life as a science teacher.@@
 
 When he worked in Oregon\'s public schools, he taught six classes, each with between 30 to 40 students, plus homeroom. With little downtime during the day, grading and lesson planning happened at home most nights.@@
 
@@ -1108,7 +1064,7 @@ Miller added that the NYPD tracks any incoming threats and runs leads through th
 
 ##Gun Control
 
-Article.create!(title: "The Gun Control Campaign Against The AR-15 Is Full Of Lies", author: "David Harsanyi", source: "The Federalist", summary: "\"This conflict over the 2nd amendment and the attempted removal of firearms rights will ultimately result in a civil war that will eventually balkanize the US along political, cultural and, most importantly, racial lines,\" wrote the Christchurch, New Zealand mass murderer in his demented manifesto. Some Americans, unfortunately, immediately used the bloodbath to support their political causes.@@
+Article.create!(title: "The Gun Control Campaign Against The AR-15 Is Full Of Lies", author: "David Harsanyi", source: "The Federalist", summary: "This conflict over the 2nd amendment and the attempted removal of firearms rights will ultimately result in a civil war.", content: "\"This conflict over the 2nd amendment and the attempted removal of firearms rights will ultimately result in a civil war that will eventually balkanize the US along political, cultural and, most importantly, racial lines,\" wrote the Christchurch, New Zealand mass murderer in his demented manifesto. Some Americans, unfortunately, immediately used the bloodbath to support their political causes.@@
 Sen. Chris Murphy wondered, for instance, why Americans needed \"semi-automatic rifles,\" at all. \"Nobody needs an AR-15 to hunt,\" the Connecticut senator tweeted. \"Nobody needs a semi-automatic rifle to defend their home. But mass shooters NEED these weapons in order to murder as many people as efficiently as possible. And so nobody will miss them when they are illegal – except for the killers.\"@@
 One of the nice things about having individual rights codified in a Constitution is that Americans don\'t (or shouldn\'t) have to explain to government officials why they choose to practice them. I\'m certain nothing in the Second Amendment mentions hunting, because the right of self-defense—an individual concern, as well as a collective one—wasn\'t about shooting deer, it was about protecting Americans from the state confiscating their firearms.@@
 While Murphy\'s reductionist take is obviously wrong on several counts, it\'s exceptionally wrong in claiming that killers would miss these rifles. Killers will always have weapons. And they don\'t need AR-15s, even though there are probably between 10 and 15 million of them in circulation in the US. And unless Murphy believes federal agents should be tasked with going house to house and confiscating every \"semi-automatic rifle\"—an unlikely scenario—they will be with us a very long time.@@
@@ -1124,7 +1080,7 @@ One: No matter how many times gun-controllers refer to the AR-15 as a \"weapon o
 Of course, every gun from the musket, to the rifle, to the revolver, to the semi-automatic handgun was once used as, or developed into, a \"weapon of war.\" In the end, every gun is designed to kill, otherwise it would be worthless. And if any weapon that kills can be categorized as a \"weapon of war\" then the AR will have some stiff competition. John Browning designed the 1911 handgun before World War I, and it was subsequently used by the US military until 1986. Now it is one of the most popular handgun designs in the country. It was a \"weapon of war.\"@@
 And every great gunmaker in American history sought government contracts as a way to maximize profits. But that doesn\'t mean the civilian and military versions of the AR are the same. Americans like AR-15s for a variety of reasons, include ease of use, but the civilian iteration was never used as a \"weapon of war.\" The major difference is that the AR-15 fires once every trigger pull, like any other semi-automatic weapon on the market. In fact, it uses smaller ammunition than most semi-automatic guns. The M-16 (and M-4)–actual weapons of war–can be fully automatic or used in three-round bursts. The AR-15, in fact, can be considered less a weapon of war when Stoner sold it to civilians (until 1977 when the patent ran out) than many other legal guns of the time. Fully automatic firearms were only effectively banned in 1986.@@
 Two: Using the phrase \"weapon of war\" is just a pretext. The District of Columbia v. Heller decision found that the Second Amendment protected weapons \"in common use by law-abiding citizens.\" The AR-15 clearly meets this criteria. Scarborough invents an exceptionally narrow definition of Heller, in which he argues that the decision basically only protects handguns for the purpose of home protection, and, I guess, bolt-action hunting rifles. But this is clearly untrue. The Heller decision found that the Second Amendment was an individual right to keep and bear arms for any \"lawful purpose,\" not merely home protection (or hunting). It found that the Second Amendment \"guarantee[s] the individual right to possess and carry weapons in case of confrontation.\"@@
-Gun restrictionists focus on the AR-15 because it looks like a military weapon. Once stripped of emotion, however, the argument against ARs, which feature the same mechanics as many others firearms, is that they work better. There will always be a gun that works better than other guns. The focus on the AR is merely part of an incremental push towards broader prohibitions. After all, many gun controllers openly argue that we should roll back technology to musket—also a weapon of war—because the founders never imagined firearms would become more powerful. This is historically inaccurate, as well. But when politicians go back to writing pamphlets rather than making their cases on TV and the internet, we can start to have that conversation.@@", link: "https://thefederalist.com/2019/03/18/the-dishonest-campaign-against-the-ar-15/", img_url: "http://www.amazon.com/First-Freedom-Through-Americas-Enduring/dp/1501174002/", slant: "Right")
+Gun restrictionists focus on the AR-15 because it looks like a military weapon. Once stripped of emotion, however, the argument against ARs, which feature the same mechanics as many others firearms, is that they work better. There will always be a gun that works better than other guns. The focus on the AR is merely part of an incremental push towards broader prohibitions. After all, many gun controllers openly argue that we should roll back technology to musket—also a weapon of war—because the founders never imagined firearms would become more powerful. This is historically inaccurate, as well. But when politicians go back to writing pamphlets rather than making their cases on TV and the internet, we can start to have that conversation.@@", link: "https://thefederalist.com/2019/03/18/the-dishonest-campaign-against-the-ar-15/", img_url: "", slant: "Right")
 
 Article.create!(title: "Washington State Toughens Laws, Bans \'Ghost Guns\'", author: "Whitney Tipton", source: "The Daily Caller", summary: "Democratic Washington Gov. Jay Inslee signed a series of gun bills into law, including a law banning 3D-printed and other \"ghost\” guns.", topic: "Gun Control", content: "Democratic Washington Gov. Jay Inslee signed a series of gun bills into law, including a law banning 3D-printed and other \"ghost\" guns.@@
 Seven gun-related bills with a variety of gun access restrictions became law, including gun removals by police for certain people with restraining orders against them and domestic violence suspects, as well as tightened laws for minors, The Associated Press reported. The bills were passed by a Democratic-majority legislature.@@
@@ -1140,8 +1096,6 @@ Opponents argue the laws weaken gun rights.
 Waldron is the spokesman for the Gun Owners Action League of Washington, a group that lobbies against gun control.@@
 \"Piece by piece, they\'re chopping away,\" he added.
 An additional bill requiring law enforcement to remove guns found at domestic violence crime scenes has yet to be signed by Inslee.@@", link: "https://dailycaller.com/2019/05/09/washington-state-gun-laws/", img_url: "https://cdn01.dailycaller.com/wp-content/uploads/2019/05/3DGun.jpg", slant: "Right")
-
-
 
 
 puts "🌰 Seeded!🌰"
