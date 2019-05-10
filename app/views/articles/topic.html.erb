@@ -1,9 +1,37 @@
 <h1><%= @articles.first.topic %></h1>
 
-<ul>
-<% @articles.each do |article| %>
-<li><%= link_to article.title, article_path(article) %>
-  <%= article.summary %>
-</li>
-<% end %>
-</ul>
+<div class="ui cards">
+  <% @articles.each do |article| %>
+  <div class="card">
+    <div class="content">
+      <img class="right floated mini ui image" src= <%= article.img_url %> >
+      <div class="header">
+        <a href= <%= article_path(article) %> > <%= article.title %> </a>
+      </div>
+      <div class="meta">
+        <%= article.source %>
+      </div>
+      <div class="description">
+        <%= article.summary %>
+      </div>
+    </div>
+    <div class="extra content">
+      <div class="ui two buttons">
+        <% if article.slant == "Left" %>
+        <a href= <%= article_path(article) %> >
+          <div class="ui basic blue button">LEFT OF CENTER</div>
+        </a>
+        <% elsif article.slant == "Right" %>
+        <a href= <%= article_path(article) %> >
+          <div class="ui basic red button">RIGHT OF CENTER</div>
+        </a>
+        <% else %>
+        <a href= <%= article_path(article) %> >
+          <div class="ui basic purple button">CENTER</div>
+        </a>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>

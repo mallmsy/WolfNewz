@@ -11,8 +11,6 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-
-
   <body>
     <header>
     <% if @logged_in %>
@@ -28,8 +26,15 @@
       <%= select_tag(:topic, options_for_select(@topics)) %>
         <input type="submit" value="Find">
       <% end %>
-
-      <% end %>
+    <% else %>
+    <div class="ui menu">
+      <a href= <%= new_login_path %> class="item">LOGIN</a>
+      <a href= <%= new_user_path %> class="item">SIGNUP</a>
+    <div class="right menu">
+      <a href= <%= root_path %> class="item">HOME</a>
+    </div>
+  </div>
+    <% end %>
     </header>
 
     <%= yield %>

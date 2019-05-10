@@ -1,65 +1,62 @@
 <h1>Welcome to your profile, <%= @user.username %>!</h1>
 
-<h3>Suggested Articles:</h3>
+<h3 class="ui header">Suggested Articles:</h3>
 
 <% suggested_article = @user.slanted_articles.sample %>
-<ul>
-  <li>
-    <%= link_to suggested_article.title, article_path(suggested_article.id) %>
-  </li>
-</ul>
 
+<div class="ui items">
+<div class="item">
+  <div class="image">
+    <img src= <%= suggested_article.img_url %> >
+  </div>
+  <div class="content">
+    <a href= <%= article_path(suggested_article.id) %> class="header"> <%= suggested_article.title %> </a>
+    <div class="meta">
+      <span> <%= suggested_article.source %> </span>
+    </div>
+  </div>
+</div>
 
-<h3>Articles You've Liked:</h3>
-<ul>
-  <!-- <% if !@user.articles.empty? %>
-    <% @user.articles.each do |article| %>
-    <li>
-      <%= link_to article.title, article_path(article) %>
-      <%= form_tag opinion_path, method: "delete" do %>
-      <%= hidden_field_tag(:article_id, article.id) %>
-      <%= hidden_field_tag(:user_id, session[:user_id])  %>
-      <input type="submit" value="Unlike This">
-      <% end %>
-    </li>
-    <% end %> -->
-<!-- </ul>
-
-  <% else %>
-    <p>Looks like you haven't liked any articles yet. Head to featured articles to start reading!</p><br>
-
-    <%= link_to "Featured Articles", featured_path %>
-  <% end %> -->
+<h3 class="ui header">Articles You've Liked:</h3>
 
   <% if !@user.articles.empty? %>
     <% @user.articles.each do |article| %>
 
-  <div class="ui link cards">
-    <a href= <%= article_path(article) %> >
-  <div class="card">
-    <div class="image">
-      <img src="/images/avatar2/large/matthew.png">
-    </div>
-    <div class="content">
-      <div class="header"><%= article.title %></div>
-      <div class="meta">
-        <%= article.source %>
-      </div>
-      <div class="description">
-        Matthew is an interior designer living in New York.
-      </div>
-    </div>
+    <div class="ui cards">
+      <div class="card">
+        <div class="content">
+          <img class="right floated mini ui image" src= <%= article.img_url %> >
+          <div class="header">
+            <a href= <%= article_path(article) %> > <%= article.title %> </a>
+          </div>
+          <div class="meta">
+            <%= article.source %>
+          </div>
+          <div class="description">
+            <%= article.summary %>
+          </div>
+        </div>
     <div class="extra content">
-      <span class="right floated">
-        Joined in 2013
-      </span>
-      <span>
-        <i class="user icon"></i>
-        75 Friends
-      </span>
+      <div class="ui two buttons">
+        <% if article.slant == "Left" %>
+        <a href= <%= article_path(article) %> >
+          <div class="ui basic blue button">LEFT OF CENTER</div>
+        </a>
+        <% elsif article.slant == "Right" %>
+        <a href= <%= article_path(article) %> >
+          <div class="ui basic red button">RIGHT OF CENTER</div>
+        </a>
+        <% else %>
+        <a href= <%= article_path(article) %> >
+          <div class="ui basic purple button">CENTER</div>
+        </a>
+        <% end %>
+      </div>
     </div>
-    </a>
-
   </div>
     <% end %>
+  <% else %>
+  <p>Looks like you haven't liked any articles yet. Head to featured articles to start reading!</p><br>
+
+    <%= link_to "Featured Articles", featured_path %>
   <% end %>
