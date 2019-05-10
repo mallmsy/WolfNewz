@@ -2,8 +2,14 @@ body {
   margin: 45px;
 }
 
-#main {
-  font-family: 'Anton', sans-serif;
+header {
+  margin: 15px;
+}
+
+h1 {
+  font-family: 'Special Elite', cursive;
+  /* font-family: 'Anton', sans-serif; */
+  font-size: -webkit-xxx-large;
 }
 
 .message {
@@ -12,6 +18,8 @@ body {
 .topic_form {
   padding-top: 10px;
 }
-header {
-  margin: 15px;
+
+.ui.raised.segment {
+  margin-left: 75px;
+  margin-right: 75px;
 }

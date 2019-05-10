@@ -2,11 +2,12 @@
 <html>
   <head>
 
-    <title id="main">Wolf Newz</title>
+    <title>Wolf Newz</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
 
@@ -28,7 +29,7 @@
       <a href= <%= log_out_path %> data-method="delete" class="item">LOGOUT</a>
     </div>
   </div>
-  
+
     <% else %>
     <div class="ui menu">
       <a href= <%= new_login_path %> class="item">LOGIN</a>
