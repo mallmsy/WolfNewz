@@ -47,18 +47,33 @@ class Article < ApplicationRecord
   end
 
   def random_left_slant
-    left_array = Article.all.select { |article| article.slant == "Left"  }
-    left_array.sample
+    left_array = Article.all.select { |article| article.slant == "Left"}
+    #left_array.sample
   end
 
   def random_right_slant
     right_array = Article.all.select { |article| article.slant == "Right"  }
-    right_array.sample
+    #right_array.sample
   end
 
   def random_center_slant
     center_array = Article.all.select { |article| article.slant == "Center"  }
-    center_array.sample
+    #center_array.sample
+  end
+
+  def topic_filter_left(topic)
+    array = random_left_slant.select{|article| article.topic == topic}
+    array.sample
+  end
+
+  def topic_filter_right(topic)
+    array = random_right_slant.select{|article| article.topic == topic}
+    array.sample
+  end
+
+  def topic_filter_center(topic)
+    array = random_center_slant.select{|article| article.topic == topic}
+    array.sample
   end
 
 end

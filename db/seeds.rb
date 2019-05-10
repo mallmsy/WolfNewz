@@ -1003,7 +1003,7 @@ At home in Irvine, California, she gets migraines. Her family takes her to the e
 In July 2017, the couple were interviewed at the U.S. Embassy in Abu Dhabi and told a visa should be ready in about two months.
 Since then, she has sent consular officials letters from doctors describing the toll of the wait. In January, officials replied by saying they would no longer send updates on her waiver request.
 \"I believe there is no waiver, and everything is just window dressing,\" she said.", link: "https://www.foxnews.com/us/travel-ban-forces-americans-to-wait-years-for-loved-ones", img_url: "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2019/05/1862/1048/ContentBroker_contentid-8c53f5975b8f4ed989d7e747b9489a04.png?ve=1&tl=1", slant: "Right")
-Article.create!(title: "Yet another Spirit Airlines flight turns back over awful odor: 'Like wet socks'", author: "Michael Bartiromo", source: "Fox News", summary: "Yet another Spirit Airlines flight was forced to change plans due to an unknown odor in the cabin.@@
+Article.create!(title: "Yet another Spirit Airlines flight turns back over awful odor: 'Like wet socks'", author: "Michael Bartiromo", source: "Fox News", summary: "Yet another Spirit Airlines flight was forced to change plans due to an unknown odor in the cabin.", topic: "Travel", content: "Yet another Spirit Airlines flight was forced to change plans due to an unknown odor in the cabin.@@
 Eight people were transported to local hospitals after the plane, which was preparing for takeoff from McCarran International Airport in Las Vegas, turned back to the gate on Wednesday morning just before 9 a.m.@@
 Around 15 people evaluated by medical personnel, Fox 5 reported. Of the eight who were ultimately transported to hospitals, one was a passenger, six were crew, and one was a medical responder with an issue believed to be unrelated to the odor, according to the Associated Press.@@
 The flight was bound for Minneapolis.@@
@@ -1016,8 +1016,7 @@ Hardin also claims a woman on the flight started \"throwing up everywhere\" upon
 A representative for Spirit Airlines did not comment on a possible cause of the odor.@@
 This marks the third time in recent weeks that a Spirit Airlines flight has been plagued by a mysterious odor. On April 24, a flight from Baltimore to Fort Lauderdale was forced to turn back due to an \"unknown odor,\" resulting in seven people being treated at local medical facilities as a precaution, Spirit confirmed. On May 3, a Spirit flight from Los Angeles to Denver turned back due to strange smell in the cabin, resulting in one person being transported to a hospital. And on May 5, another flight, from Dallas to Tampa, was diverted to Dallas/Fort Worth International Airport due to \"reports of an odor,\" though a Spirit spokesperson has since said it was actually due to a sick passenger, the Associated Press reported.@@
 In all of the above cases, the aircrafts were taken out of service for inspection.@@
-
-", topic: "Travel", content: "Yet another Spirit Airlines flight was forced to change plans due to an unknown odor in the cabin.", link: "https://www.foxnews.com/travel/spirit-airlines-odor-wet-socks", img_url: "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2019/05/1862/1048/SpiritAirlinesIstock.jpg?ve=1&tl=1", slant: "Right")
+", link: "https://www.foxnews.com/travel/spirit-airlines-odor-wet-socks", img_url: "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2019/05/1862/1048/SpiritAirlinesIstock.jpg?ve=1&tl=1", slant: "Right")
 
 ##Technology
 

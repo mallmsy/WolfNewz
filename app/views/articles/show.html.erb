@@ -1,5 +1,5 @@
  <% if @article.slant == "Left" %>
-   <a href= <%= article_path(@article.random_right_slant) %> >
+   <a href= <%= article_path(@article.topic_filter_right(@article.topic)) %> >
 
      <div class="ui red message">
        <div class="header">
@@ -9,7 +9,7 @@
    </div>
  </a>
  <% elsif @article.slant == "Right" %>
-   <a href= <%= article_path(@article.random_left_slant) %> >
+   <a href= <%= article_path(@article.topic_filter_left(@article.topic)) %> >
      <div class="ui blue message">
        <div class="header">
          Stay informed!
@@ -30,7 +30,6 @@
  <% end %>
 
 <!-- end of header notification -->
-
 
 <h1><%= @article.title %></h1>
 By <%= @article.author %><br>
