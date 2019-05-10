@@ -8,7 +8,7 @@ class OpinionsController < ApplicationController
   def destroy
     @opinion = Opinion.find_by(user_id: params[:user_id], article_id: params[:article_id])
     @opinion.destroy
-    redirect_to user_path(session[:user_id])
+    redirect_to article_path(params[:article_id])
   end
 end
 

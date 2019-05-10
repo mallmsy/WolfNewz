@@ -3,18 +3,18 @@
 
      <div class="ui red message">
        <div class="header">
-       <h3>Stay informed!</h3>
+       <h3>Escape the Echo Chamber!</h3>
        </div>
-     <p>How about an article from another perspective?</p>
+     <p>Challenge your assumptions and checkout an article from another perspective here >>> </p>
    </div>
  </a>
  <% elsif @article.slant == "Right" %>
    <a href= <%= article_path(@article.topic_filter_left(@article.topic)) %> >
      <div class="ui blue message">
        <div class="header">
-         Stay informed!
+         <h3>Escape the Echo Chamber!</h3>
        </div>
-       <p>How about an article from another perspective?</p>
+       <p>Challenge your assumptions and checkout an article from another perspective here >>> </p>
      </div>
    </a>
 
@@ -22,9 +22,9 @@
      <a href= <%= article_path(Article.all.sample.id) %> >
        <div class="ui purple message">
          <div class="header">
-           Stay informed!
+           <h3>Escape the Echo Chamber!</h3>
          </div>
-         <p>How about an article from another perspective?</p>
+         <p>Challenge your assumptions and checkout an article from another perspective here >>> </p>
        </div>
      </a>
  <% end %>
@@ -47,17 +47,45 @@ Political Slant: <%= @article.slant %>
   <%= form_tag opinions_path do %>
   <%= hidden_field_tag(:article_id, @article.id) %>
   <%= hidden_field_tag(:user_id, session[:user_id])  %>
-  <input type="submit" value="I Like This">
+  <div class="ui labeled button" tabindex="0">
+  <button class="ui green button" type="submit">Like</button>
+      <a class="ui basic green left pointing label">
+      <%= @article.likes %>
+      </a>
+    </div>
+
+  <!-- <input type="submit" value="I Like This"> -->
   <% end %>
 <% elsif @logged_in %>
-  <p>You have already liked this article!</p>
-  <p> <%= form_tag opinion_path, method: "delete" do %>
+  <%= form_tag opinion_path, method: "delete" do %>
   <%= hidden_field_tag(:article_id, @article.id) %>
   <%= hidden_field_tag(:user_id, session[:user_id])  %>
-  <input type="submit" value="Unlike This">
+  <div class="ui labeled button" tabindex="0">
+  <button class="ui red button" type="submit">Un-Like</button>
+      <a class="ui basic red left pointing label">
+      <%= @article.likes %>
+      </a>
+    </div>
   <% end %> </p>
 <% else %>
-  <p>Show your approval for this article with a like! <%= link_to 'Log In', new_login_path %> or <%=link_to 'Sign Up', new_user_path %></p>
+<%= form_tag new_login_path, method: :get do %>
+  <div class="ui labeled button" tabindex="0">
+    <button class="ui green button" type="submit">Like</button>
+      <a class="ui basic green left pointing label">
+        <%= @article.likes %>
+      </a>
+  </div>
+  <% end %>
 <% end %>
 
-<p>This article has been liked <%= @article.likes %> times.</p>
+<div class="ui raised segment">
+  <h1><%= @article.title %></h1>
+  By <%= @article.author %><br>
+  <%= link_to 'Original Article', @article.link %> from <%= @article.source %><br>
+
+  <p> <%= @article.summary %>
+    <% @article.article_split.each do |paragraph| %>
+  <p> <%= paragraph %></p>
+  <% end %>
+  <br>
+</div>
