@@ -11,7 +11,6 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
-    flash[:suggest] = {suggest: "How about an article from another perspective?"}
   end
 
   private

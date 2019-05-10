@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>WolfBiz</title>
+    <title>Wolf Newz</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,21 +11,25 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+
+
   <body>
     <header>
     <% if @logged_in %>
-      <%= button_to "LOGOUT", log_out_path, method: :delete %><br>
-        <%= link_to "My Profile", user_path(@logged_in_user_id), class: "fancy-link" %><br>
-
-        <%= link_to "Featured Articles", featured_path %><br>
-
-        Select Topic:
-        <%= form_tag by_topic_path, method: :get do%>
-        <%= select_tag(:topic, options_for_select(@topics)) %>
+    <div class="ui menu">
+      <a href= <%= user_path(@logged_in_user_id) %> class="item">My Profile</a>
+      <a href= <%= featured_path %> class="item">Featured Articles</a>
+    <div class="right menu">
+      <a href= <%= log_out_path %> data-method="delete" class="item">LOGOUT</a>
+    </div>
+  </div>
+  Select Topic:
+      <%= form_tag by_topic_path, method: :get do%>
+      <%= select_tag(:topic, options_for_select(@topics)) %>
         <input type="submit" value="Find">
-        <% end %>
+      <% end %>
 
-        <% end %>
+      <% end %>
     </header>
 
     <%= yield %>

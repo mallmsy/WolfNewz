@@ -12,7 +12,7 @@
 
 <h3>Articles You've Liked:</h3>
 <ul>
-  <% if !@user.articles.empty? %>
+  <!-- <% if !@user.articles.empty? %>
     <% @user.articles.each do |article| %>
     <li>
       <%= link_to article.title, article_path(article) %>
@@ -22,11 +22,44 @@
       <input type="submit" value="Unlike This">
       <% end %>
     </li>
-    <% end %>
-</ul>
+    <% end %> -->
+<!-- </ul>
 
   <% else %>
     <p>Looks like you haven't liked any articles yet. Head to featured articles to start reading!</p><br>
 
     <%= link_to "Featured Articles", featured_path %>
+  <% end %> -->
+
+  <% if !@user.articles.empty? %>
+    <% @user.articles.each do |article| %>
+
+  <div class="ui link cards">
+    <a href= <%= article_path(article) %> >
+  <div class="card">
+    <div class="image">
+      <img src="/images/avatar2/large/matthew.png">
+    </div>
+    <div class="content">
+      <div class="header"><%= article.title %></div>
+      <div class="meta">
+        <%= article.source %>
+      </div>
+      <div class="description">
+        Matthew is an interior designer living in New York.
+      </div>
+    </div>
+    <div class="extra content">
+      <span class="right floated">
+        Joined in 2013
+      </span>
+      <span>
+        <i class="user icon"></i>
+        75 Friends
+      </span>
+    </div>
+    </a>
+
+  </div>
+    <% end %>
   <% end %>
