@@ -2,18 +2,16 @@ body {
   margin: 45px;
 }
 
-title {
-  font-family:
+#main {
+  font-family: 'Anton', sans-serif;
 }
 
 .message {
   margin: 15px;
 }
-
+.topic_form {
+  padding-top: 10px;
+}
 header {
   margin: 15px;
 }
-
-/* .cards {
-  padding: 25px;
-} */
