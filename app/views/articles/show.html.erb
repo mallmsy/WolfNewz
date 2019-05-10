@@ -9,7 +9,7 @@
    </div>
  </a>
  <% elsif @article.slant == "Right" %>
-   <a href= <%= article_path(@article.topic_filter_left(@article.topic)) %> >
+     <a href= <%= article_path(@article.topic_filter_left(@article.topic)) %> >
      <div class="ui blue message">
        <div class="header">
          <h3>Escape the Echo Chamber!</h3>
@@ -31,55 +31,45 @@
 
 <!-- end of header notification -->
 
-<h1><%= @article.title %></h1>
-By <%= @article.author %><br>
-<%= link_to 'Original Article', @article.link %> from <%= @article.source %><br>
 
-Political Slant: <%= @article.slant %>
-
-<p> <%= @article.summary %>
-  <% @article.article_split.each do |paragraph| %>
-<p> <%= paragraph %></p>
-<% end %>
-<br>
-
-<% if @logged_in && !@article.users.ids.include?(session[:user_id]) %>
-  <%= form_tag opinions_path do %>
-  <%= hidden_field_tag(:article_id, @article.id) %>
-  <%= hidden_field_tag(:user_id, session[:user_id])  %>
-  <div class="ui labeled button" tabindex="0">
-  <button class="ui green button" type="submit">Like</button>
-      <a class="ui basic green left pointing label">
-      <%= @article.likes %>
-      </a>
-    </div>
-
-  <!-- <input type="submit" value="I Like This"> -->
-  <% end %>
-<% elsif @logged_in %>
-  <%= form_tag opinion_path, method: "delete" do %>
-  <%= hidden_field_tag(:article_id, @article.id) %>
-  <%= hidden_field_tag(:user_id, session[:user_id])  %>
-  <div class="ui labeled button" tabindex="0">
-  <button class="ui red button" type="submit">Un-Like</button>
-      <a class="ui basic red left pointing label">
-      <%= @article.likes %>
-      </a>
-    </div>
-  <% end %> </p>
-<% else %>
-<%= form_tag new_login_path, method: :get do %>
-  <div class="ui labeled button" tabindex="0">
-    <button class="ui green button" type="submit">Like</button>
-      <a class="ui basic green left pointing label">
-        <%= @article.likes %>
-      </a>
-  </div>
-  <% end %>
-<% end %>
 
 <div class="ui raised segment">
   <h1><%= @article.title %></h1>
+  <% if @logged_in && !@article.users.ids.include?(session[:user_id]) %>
+    <%= form_tag opinions_path do %>
+    <%= hidden_field_tag(:article_id, @article.id) %>
+    <%= hidden_field_tag(:user_id, session[:user_id])  %>
+    <div class="ui labeled button" tabindex="0">
+    <button class="ui green button" type="submit">Like</button>
+        <a class="ui basic green left pointing label">
+        <%= @article.likes %>
+        </a>
+      </div>
+
+    <% end %>
+  <% elsif @logged_in %>
+    <%= form_tag opinion_path, method: "delete" do %>
+    <%= hidden_field_tag(:article_id, @article.id) %>
+    <%= hidden_field_tag(:user_id, session[:user_id])  %>
+    <div class="ui labeled button" tabindex="0">
+    <button class="ui red button" type="submit">Un-Like</button>
+        <a class="ui basic red left pointing label">
+        <%= @article.likes %>
+        </a>
+      </div>
+    <% end %> </p>
+  <% else %>
+  <%= form_tag new_login_path, method: :get do %>
+    <div class="ui labeled button" tabindex="0">
+      <button class="ui green button" type="submit">Like</button>
+        <a class="ui basic green left pointing label">
+          <%= @article.likes %>
+        </a>
+    </div>
+    <% end %>
+  <% end %>
+
+
   By <%= @article.author %><br>
   <%= link_to 'Original Article', @article.link %> from <%= @article.source %><br>
 
