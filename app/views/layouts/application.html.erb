@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Wolf Newz</title>
+
+    <title id="main">Wolf Newz</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
 
@@ -11,25 +14,30 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-
-
   <body>
     <header>
     <% if @logged_in %>
     <div class="ui menu">
       <a href= <%= user_path(@logged_in_user_id) %> class="item">My Profile</a>
       <a href= <%= featured_path %> class="item">Featured Articles</a>
+      <%= form_tag by_topic_path, method: :get, :class => 'topic_form' do%>
+      <%= select_tag(:topic, options_for_select(@topics)) %>
+        <input type="submit" value="Find">
+      <% end %>
     <div class="right menu">
       <a href= <%= log_out_path %> data-method="delete" class="item">LOGOUT</a>
     </div>
   </div>
-  Select Topic:
-      <%= form_tag by_topic_path, method: :get do%>
-      <%= select_tag(:topic, options_for_select(@topics)) %>
-        <input type="submit" value="Find">
-      <% end %>
-
-      <% end %>
+  
+    <% else %>
+    <div class="ui menu">
+      <a href= <%= new_login_path %> class="item">LOGIN</a>
+      <a href= <%= new_user_path %> class="item">SIGNUP</a>
+    <div class="right menu">
+      <a href= <%= root_path %> class="item">HOME</a>
+    </div>
+  </div>
+    <% end %>
     </header>
 
     <%= yield %>

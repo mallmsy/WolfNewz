@@ -2,18 +2,16 @@ body {
   margin: 45px;
 }
 
-title {
-  font-family:
+#main {
+  font-family: 'Anton', sans-serif;
 }
 
-/* header {
-  display: flex;
-  justify-content: flex-start;
-} */
-
-.cards {
-  padding: 25px;
-  display: flex;
-  align-content: space-around;
-  flex-wrap: wrap;
+.message {
+  margin: 15px;
+}
+.topic_form {
+  padding-top: 10px;
+}
+header {
+  margin: 15px;
 }
